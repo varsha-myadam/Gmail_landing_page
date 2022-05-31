@@ -1,0 +1,342 @@
+*, *::before, *::after{/*by defualt put these to zeroes*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-family: 'Open Sans','sans-serif';
+    font-size: 14px;
+}
+
+@media (min-width: 800px){
+    *{
+        font-size: 16px;
+    }
+    /*.mobile-only{
+        display: none;
+    }
+    
+    .desktop-only{
+        display: block;
+    }
+
+    .hero-desktop{
+        display: grid;
+    }*/
+}
+
+img{
+    max-width: 100%;
+}
+
+.hero-desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 72px;
+}
+
+.hero-desktop h1{
+    text-align: left;
+    font-size: 56px;
+    margin-bottom: 48px;
+    line-height: 1.25;
+}
+.hero-desktop p{
+    text-align: left;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+
+.hero-desktop img{
+    width: 100%;
+    height: auto;
+    margin: -2rem;
+}
+
+header img{ 
+    height: 36px;
+}
+
+.btn{
+    color: white;
+    background: #1a73e8;
+    padding: 0 24px;
+    line-height: 36px;
+    font-size: 19px;
+    border-radius: 2px;
+    letter-spacing: 0.25px;
+    font-weight: 600;
+}
+
+.btn:hover{ 
+    color:white;
+    background: #1a4ea6;
+}
+
+a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;/*no underline*/
+    color:#666;
+}
+
+a:hover{
+    color:black;
+}
+
+header{
+    /*display: none;*/ 
+    background: white;
+    box-shadow: 0 0 4px 4px #ddd;/*for shadow effect - horizontal,vertical,blur radius,spread radius,color*/
+    /*position: fixed;to fix the header navigation*/
+    width: 100%;
+}
+
+.clear{
+    height: 112px;/*56+56 each of nav bar*/
+}
+ 
+.header-mobile nav{ 
+    height: 64px;
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between; or remove div and write mr-auto -> margin right*/
+    padding: 0 2.8%;/*to get the left space  before logo*/
+    border-bottom: 1px solid #ddd;
+}
+
+.header-desktop nav{ 
+    height: 56px;
+    /*border: 1px solid red;*/
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between; or remove div and write mr-auto -> margin right*/
+    padding: 0 2.8%;/*to get the left space  before logo*/
+    border-bottom: 1px solid #ddd;
+}
+
+.mr-auto{
+    margin-right: auto;/*whatever is to ur right push it apart*/
+}
+
+.gmail-logo-text{
+    font-size: 28px;
+    color: #666;
+    margin-left: 8px;
+    font-weight: 300;
+}
+
+footer{
+    /*margin: 32px;*/
+    background:#f8f8f8;
+}
+
+footer img{
+    margin: 32px;
+    height: 80px;
+    /*margin-left:54px;*/
+}
+
+footer > *{/*all children of the footer*/
+    margin-left: 36px;
+    margin-bottom: 30px;
+}
+footer ul{
+    display: flex;/*one after another*/
+    list-style: none;/*no bullets nothing*/
+    /*margin: 3px 54px;*/
+    font-size: 100rem;
+}
+
+footer select{
+    margin-left: 16px;
+    border: none;
+    background-color: #f8f8f8;
+    padding: 8px;
+    width: 110px;
+}
+
+footer li{
+    margin-right: 16px;
+}
+
+.help_icon{
+    color: white;
+    font-weight: 600;
+    background: black;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 99px;
+    margin-right: 8px;
+}
+
+/*sections*/
+
+section{
+    padding: 24px;
+    /*text-align: center; or */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section a{
+    height: 35px;
+}
+
+section img{
+    height: 50%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.last img{
+    height: 3rem;
+    width: 3.5rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.last h2{
+    margin: 3px;
+}
+
+.work{
+    color: blue;
+    padding: 10px;
+}
+
+h1,h2{
+    font-size: 38px;
+    color: #222;
+    font-weight: 600;
+    /*text-align: center;*/
+    margin: 24px 0;
+    letter-spacing: 1px;
+}
+
+h1{
+    font-size: 44px; 
+}
+
+p{
+    /*text-align: center;*/
+    margin: 12px;
+    font-size: 21px;
+    text-align: center;
+}
+ 
+.experience-gmail,.devices,.never-drop-ball,.avoid-suspicious-emails,.last{
+    background-color: #f8f8f8;
+}
+
+.hero img{
+    margin: 5rem;
+    height: 100%;
+    width: 100%;
+}
+ 
+.hero a{
+    margin: 20px;
+    height: auto;
+}
+
+.workspace{
+    padding: 4rem; 
+}
+
+h3{
+    font-size: 20px;
+    color:rgba(87, 60, 60, 0.699);
+    margin-bottom: 1rem;
+}
+
+.mobile-only{
+    
+}
+
+.desktop-only{
+    display: none;
+}
+
+.header-desktop{
+    position: fixed; 
+    height: 56px;
+}
+  
+.header-mobile{ 
+    position: fixed;
+    /*height: 56px;*/
+}
+
+.header-desktop a{
+    margin-left: 20px;
+}
+
+.header-desktop .btn{
+    line-height: 48px;
+}
+
+@media (min-width: 800px){
+    /**{
+        font-size: 16px;
+    }*/
+
+    h1{
+        font-size: 48px;
+    }
+
+    h2{
+        font-size: 42px;
+    }
+    .mobile-only{
+        display: none;
+    }
+    
+    .desktop-only{
+        display: block;
+    }
+
+    .hero-desktop{
+        display: grid;
+    } 
+
+    .header-desktop{
+        display: grid;
+    }
+ 
+    /*.take-action-desktop{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 5%;
+    }*/
+
+    .take-action-desktop{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .take-action-desktop .column{
+        width: 50%;
+    }
+
+    .take-action-desktop img{
+        width: 45%;
+    }
+
+    section p,section h2{
+        text-align: left;
+    }
+
+}
+
+
+
+
+
+
